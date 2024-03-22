@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
+*{  font-family: "Kadwa", serif;
+    margin: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#banner{
+    background-image: url('banner.jpg');
+    height: 60vh;
+    background-size: cover;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    animation: derecha 1s;
+}
+
+@keyframes derecha  {
+    0%{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+#arriba{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8vh;
+    animation: bajar 1s;
+}
+@keyframes bajar {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+nav{
+    display: flex ;
+    column-gap: 25px;
+}
+nav > a{
+    color: #3a1801;
+    text-decoration: none;
+} 
+
+#banner > h1{
+    color : #ffc14e;
+    font-size: 3.5rem;
+    margin-left: 10vw;
+}
+
+#boton{
+    margin-left: 10vw;
+    color: #ffffff;
+    background-color: #ffc14e;
+    width: fit-content;
+    padding: 5px 25px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+#about{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    background-color: #f8f4e8;
+    background-image: url('https://image.spreadshirtmedia.net/image-server/v1/designs/183233929,width=178,height=178,colors%5B0%5D=000000.png');
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-position: 10% center ;
+    background-blend-mode:overlay ;
+}
+
+#about >h1{
+    color: #432b1c;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#linea{
+    width: 100px;
+    height: 4px;
+    background-color:#ffc14e ;
+}
+
+#about > p{
+    width: 30%;
+    text-align: center;
+}
+
+button{
+    background-color: transparent;
+    border : 2px #ffc14e solid;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 18px ;
+}
